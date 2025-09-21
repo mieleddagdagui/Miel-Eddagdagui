@@ -56,7 +56,19 @@ body {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 1.5rem;
-    color: #ff8f00;
+    color: #f2b21d;
+}
+.logo-image {
+    height: 7rem;
+    width: 7rem;
+}
+.social-logo {
+    height: 3rem;
+    width: 3rem;
+}
+.insta-logo {
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 .logo-icon {
