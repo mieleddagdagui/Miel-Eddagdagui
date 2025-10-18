@@ -194,7 +194,7 @@ body {
 }
 
 .toggle > div > input[type=checkbox]:checked ~ div:before {
-    color: #999;  /* Gray when FR is not selected */
+    color: #000; /* Gray when FR is not selected */
     text-shadow: none;
 }
 
