@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,20 +15,26 @@
                 <span class="logo-text">Miel Eddagdegui</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home">Acceuil</a></li>
-                <li><a href="#products">Produits</a></li>
-                <li><a href="#about">A propos</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" data-fr="Acceuil" data-ar="الرئيسية">Acceuil</a></li>
+                <li><a href="#products" data-fr="Produits" data-ar="المنتجات">Produits</a></li>
+                <li><a href="#about" data-fr="A propos" data-ar="من نحن">A propos</a></li>
+                <li><a href="#contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a></li>
             </ul>
+            <div class="toggle">
+                <div>
+                    <input type="checkbox" id="langToggle">
+                    <div data-unchecked="FR" data-checked="AR"></div>
+                </div>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">L'or pur de la nature</h1>
-            <p class="hero-subtitle">Produits artisanaux à base de miel élaborés avec passion et tradition</p>
-            <button class="cta-button">Découvrez notre collection</button>
+            <h1 class="hero-title" data-fr="L'or pur de la nature" data-ar="الذهب الخالص للطبيعة">L'or pur de la nature</h1>
+            <p class="hero-subtitle" data-fr="Produits artisanaux à base de miel élaborés avec passion et tradition" data-ar="منتجات عسل حرفية مصنوعة بشغف وتقاليد">Produits artisanaux à base de miel élaborés avec passion et tradition</p>
+            <button class="cta-button" data-fr="Découvrez notre collection" data-ar="اكتشف مجموعتنا">Découvrez notre collection</button>
         </div>
         <div class="hero-visual">
             <div class="floating-elements">
@@ -42,18 +48,18 @@
     <!-- Products Section -->
     <section id="products" class="products">
         <div class="container">
-            <h2 class="section-title">Notre collection Premium</h2>
+            <h2 class="section-title" data-fr="Notre collection Premium" data-ar="مجموعتنا المميزة">Notre collection Premium</h2>
             <div class="products-grid">
                 <div class="product-card">
                     <div class="product-image">
                         <div class="product-placeholder">🍯</div>
                         <div class="product-overlay">
-                            <button class="view-product">Voir les détails</button>
+                            <button class="view-product" data-product="cresson" data-fr="Voir les détails" data-ar="عرض التفاصيل">Voir les détails</button>
                         </div>
                     </div>
                     <div class="product-info">
-                        <h3>Miel de Cresson</h3>
-                        <p>Miel de Cresson</p>
+                        <h3 data-fr="Miel de Cresson" data-ar="عسل الجرجير">Miel de Cresson</h3>
+                        <p data-fr="Miel de Cresson" data-ar="عسل الجرجير">Miel de Cresson</p>
                         <span class="price">120 dt</span>
                     </div>
                 </div>
@@ -62,12 +68,12 @@
                     <div class="product-image">
                         <div class="product-placeholder">🌻</div>
                         <div class="product-overlay">
-                            <button class="view-product">Voir les détails</button>
+                            <button class="view-product" data-product="jujubier" data-fr="Voir les détails" data-ar="عرض التفاصيل">Voir les détails</button>
                         </div>
                     </div>
                     <div class="product-info">
-                        <h3>Miel de Jujubier</h3>
-                        <p>Miel de Jujubier</p>
+                        <h3 data-fr="Miel de Jujubier" data-ar="عسل السدر">Miel de Jujubier</h3>
+                        <p data-fr="Miel de Jujubier" data-ar="عسل السدر">Miel de Jujubier</p>
                         <span class="price">60 dt</span>
                     </div>
                 </div>
@@ -76,12 +82,12 @@
                     <div class="product-image">
                         <div class="product-placeholder">🌸</div>
                         <div class="product-overlay">
-                            <button class="view-product">Voir les détails</button>
+                            <button class="view-product" data-product="eucalyptus" data-fr="Voir les détails" data-ar="عرض التفاصيل">Voir les détails</button>
                         </div>
                     </div>
                     <div class="product-info">
-                        <h3>Miel d'Eucalyptus</h3>
-                        <p>Miel d'Eucalyptus</p>
+                        <h3 data-fr="Miel d'Eucalyptus" data-ar="عسل الأوكالبتوس">Miel d'Eucalyptus</h3>
+                        <p data-fr="Miel d'Eucalyptus" data-ar="عسل الأوكالبتوس">Miel d'Eucalyptus</p>
                         <span class="price">60 dt</span>
                     </div>
                 </div>
@@ -90,12 +96,12 @@
                     <div class="product-image">
                         <div class="product-placeholder">🌿</div>
                         <div class="product-overlay">
-                            <button class="view-product">Voir les détails</button>
+                            <button class="view-product" data-product="montagne" data-fr="Voir les détails" data-ar="عرض التفاصيل">Voir les détails</button>
                         </div>
                     </div>
                     <div class="product-info">
-                        <h3>Miel de Montagne</h3>
-                        <p>Miel de Montagne</p>
+                        <h3 data-fr="Miel de Montagne" data-ar="عسل الجبل">Miel de Montagne</h3>
+                        <p data-fr="Miel de Montagne" data-ar="عسل الجبل">Miel de Montagne</p>
                         <span class="price">60 dt</span>
                     </div>
                 </div>
@@ -104,12 +110,12 @@
                     <div class="product-image">
                         <div class="product-placeholder">🍊</div>
                         <div class="product-overlay">
-                            <button class="view-product">Voir les détails</button>
+                            <button class="view-product" data-product="produit1" data-fr="Voir les détails" data-ar="عرض التفاصيل">Voir les détails</button>
                         </div>
                     </div>
                     <div class="product-info">
-                        <h3>produit 1</h3>
-                        <p>produit 1</p>
+                        <h3 data-fr="produit 1" data-ar="منتج 1">produit 1</h3>
+                        <p data-fr="produit 1" data-ar="منتج 1">produit 1</p>
                         <span class="price">60 dt</span>
                     </div>
                 </div>
@@ -118,12 +124,12 @@
                     <div class="product-image">
                         <div class="product-placeholder">🌲</div>
                         <div class="product-overlay">
-                            <button class="view-product">Voir les détails</button>
+                            <button class="view-product" data-product="produit2" data-fr="Voir les détails" data-ar="عرض التفاصيل">Voir les détails</button>
                         </div>
                     </div>
                     <div class="product-info">
-                        <h3>produit 1</h3>
-                        <p>produit 1</p>
+                        <h3 data-fr="produit 1" data-ar="منتج 1">produit 1</h3>
+                        <p data-fr="produit 1" data-ar="منتج 1">produit 1</p>
                         <span class="price">60 dt</span>
                     </div>
                 </div>
@@ -136,21 +142,21 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>Notre histoire</h2>
-                    <p>Depuis trois générations, notre famille se consacre à l'art ancestral de l'apiculture. Nous croyons en des pratiques durables qui respectent les abeilles et leur environnement.</p>
-                    <p>Chaque pot de notre miel témoigne de la relation harmonieuse entre la nature et l'artisanat, offrant une douceur pure et non transformée directement de nos ruches à votre table.</p>
+                    <h2 data-fr="Notre histoire" data-ar="قصتنا">Notre histoire</h2>
+                    <p data-fr="Depuis trois générations, notre famille se consacre à l'art ancestral de l'apiculture. Nous croyons en des pratiques durables qui respectent les abeilles et leur environnement." data-ar="منذ ثلاثة أجيال، تكرس عائلتنا نفسها لفن تربية النحل التقليدي. نؤمن بممارسات مستدامة تحترم النحل وبيئته.">Depuis trois générations, notre famille se consacre à l'art ancestral de l'apiculture. Nous croyons en des pratiques durables qui respectent les abeilles et leur environnement.</p>
+                    <p data-fr="Chaque pot de notre miel témoigne de la relation harmonieuse entre la nature et l'artisanat, offrant une douceur pure et non transformée directement de nos ruches à votre table." data-ar="كل وعاء من عسلنا يشهد على العلاقة المتناغمة بين الطبيعة والحرفية، ويقدم حلاوة نقية وغير معالجة مباشرة من خلايانا إلى طاولتك.">Chaque pot de notre miel témoigne de la relation harmonieuse entre la nature et l'artisanat, offrant une douceur pure et non transformée directement de nos ruches à votre table.</p>
                     <div class="stats">
                         <div class="stat">
                             <span class="stat-number">270+</span>
-                            <span class="stat-label">Ruches actives</span>
+                            <span class="stat-label" data-fr="Ruches actives" data-ar="خلايا نشطة">Ruches actives</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">8</span>
-                            <span class="stat-label">Variétés de miel</span>
+                            <span class="stat-label" data-fr="Variétés de miel" data-ar="أنواع العسل">Variétés de miel</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">100%</span>
-                            <span class="stat-label">naturel</span>
+                            <span class="stat-label" data-fr="naturel" data-ar="طبيعي">naturel</span>
                         </div>
                     </div>
                 </div>
@@ -171,15 +177,15 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
+            <h2 class="section-title" data-fr="Contact" data-ar="اتصل بنا">Contact</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Visitez notre rucher</h3>
-                    <p>Découvrez de première main la magie de notre processus de fabrication du miel.</p>
+                    <h3 data-fr="Visitez notre rucher" data-ar="قم بزيارة منحلنا">Visitez notre rucher</h3>
+                    <p data-fr="Découvrez de première main la magie de notre processus de fabrication du miel." data-ar="اكتشف بنفسك سحر عملية صنع العسل لدينا.">Découvrez de première main la magie de notre processus de fabrication du miel.</p>
                     <div class="contact-details">
                         <div class="detail">
                             <span class="icon">📍</span>
-                            <span>Sousse </span>
+                            <span>Sousse</span>
                         </div>
                         <div class="detail">
                             <span class="icon">📞</span>
@@ -192,10 +198,10 @@
                     </div>
                 </div>
                 <form class="contact-form">
-                    <input type="text" placeholder="Votre Nom et Prénom" required>
-                    <input type="email" placeholder="Votre Email" required>
-                    <textarea placeholder="Votre Message" rows="5" required></textarea>
-                    <button type="submit">Envoyer un Message</button>
+                    <input type="text" placeholder="Votre Nom et Prénom" data-placeholder-fr="Votre Nom et Prénom" data-placeholder-ar="اسمك الكامل" required>
+                    <input type="email" placeholder="Votre Email" data-placeholder-fr="Votre Email" data-placeholder-ar="بريدك الإلكتروني" required>
+                    <textarea placeholder="Votre Message" data-placeholder-fr="Votre Message" data-placeholder-ar="رسالتك" rows="5" required></textarea>
+                    <button type="submit" data-fr="Envoyer un Message" data-ar="إرسال رسالة">Envoyer un Message</button>
                 </form>
             </div>
         </div>
@@ -209,7 +215,7 @@
                     <img class="logo-image" src="logo-removebg-preview.png">
                     <span class="logo-text">Miel Eddagdegui</span>
                 </div>
-                <p>&copy; 2025 Miel Eddagdegui. Tous droits réservés.</p>
+                <p data-fr="© 2025 Miel Eddagdegui. Tous droits réservés." data-ar="© 2025 عسل الدقدوقي. جميع الحقوق محفوظة.">&copy; 2025 Miel Eddagdegui. Tous droits réservés.</p>
                 <div class="social-links">
                     <a href="https://www.facebook.com/share/1C5oXVYhLA/"><img class="social-logo" src="facebook.webp"></a>
                     <a href="https://www.instagram.com/mieleddagdagui?igsh=cGZuZXRrZ2twYXU0"><img class="insta-logo" src="insta.png"></a>
@@ -219,7 +225,141 @@
         </div>
     </footer>
 
+    <!-- Product Details Popup -->
+    <div class="popup-overlay" id="productPopup">
+        <div class="popup-content">
+            <button class="popup-close" id="closePopup">&times;</button>
+            <h2 class="popup-title" id="popupTitle">Détails du produit</h2>
+            <div class="popup-body" id="popupBody">
+                <!-- Product details will be inserted here -->
+                <p data-fr="Les bienfaits de ce produit seront affichés ici." data-ar="سيتم عرض فوائد هذا المنتج هنا.">Les bienfaits de ce produit seront affichés ici.</p>
+            </div>
+        </div>
+    </div>
+
     <script>
+        // Language switching
+        let currentLang = 'fr';
+        const langToggle = document.getElementById('langToggle');
+        const html = document.querySelector('html');
+
+        langToggle.addEventListener('change', () => {
+            currentLang = langToggle.checked ? 'ar' : 'fr';
+            html.setAttribute('lang', currentLang);
+            // Remove RTL to keep positions fixed
+            // html.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
+            
+            // Update all translatable elements
+            document.querySelectorAll('[data-fr]').forEach(el => {
+                el.textContent = el.getAttribute(`data-${currentLang}`);
+            });
+            
+            // Update placeholders
+            document.querySelectorAll('[data-placeholder-fr]').forEach(el => {
+                el.placeholder = el.getAttribute(`data-placeholder-${currentLang}`);
+            });
+        });
+
+        // Product popup
+        const popup = document.getElementById('productPopup');
+        const closePopup = document.getElementById('closePopup');
+        const popupTitle = document.getElementById('popupTitle');
+        const popupBody = document.getElementById('popupBody');
+
+        // Product details data (you can customize this later)
+        const productDetails = {
+            cresson: {
+                fr: {
+                    title: 'Miel de Cresson',
+                    content: 'Les bienfaits du miel de cresson seront affichés ici.'
+                },
+                ar: {
+                    title: 'عسل الجرجير',
+                    content: 'سيتم عرض فوائد عسل الجرجير هنا.'
+                }
+            },
+            jujubier: {
+                fr: {
+                    title: 'Miel de Jujubier',
+                    content: 'Les bienfaits du miel de jujubier seront affichés ici.'
+                },
+                ar: {
+                    title: 'عسل السدر',
+                    content: 'سيتم عرض فوائد عسل السدر هنا.'
+                }
+            },
+            eucalyptus: {
+                fr: {
+                    title: 'Miel d\'Eucalyptus',
+                    content: 'Les bienfaits du miel d\'eucalyptus seront affichés ici.'
+                },
+                ar: {
+                    title: 'عسل الأوكالبتوس',
+                    content: 'سيتم عرض فوائد عسل الأوكالبتوس هنا.'
+                }
+            },
+            montagne: {
+                fr: {
+                    title: 'Miel de Montagne',
+                    content: 'Les bienfaits du miel de montagne seront affichés ici.'
+                },
+                ar: {
+                    title: 'عسل الجبل',
+                    content: 'سيتم عرض فوائد عسل الجبل هنا.'
+                }
+            },
+            produit1: {
+                fr: {
+                    title: 'Produit 1',
+                    content: 'Les bienfaits de ce produit seront affichés ici.'
+                },
+                ar: {
+                    title: 'منتج 1',
+                    content: 'سيتم عرض فوائد هذا المنتج هنا.'
+                }
+            },
+            produit2: {
+                fr: {
+                    title: 'Produit 2',
+                    content: 'Les bienfaits de ce produit seront affichés ici.'
+                },
+                ar: {
+                    title: 'منتج 2',
+                    content: 'سيتم عرض فوائد هذا المنتج هنا.'
+                }
+            }
+        };
+
+        // Open popup
+        document.querySelectorAll('.view-product').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const productId = btn.getAttribute('data-product');
+                const product = productDetails[productId];
+                
+                if (product) {
+                    popupTitle.textContent = product[currentLang].title;
+                    popupBody.innerHTML = `<p>${product[currentLang].content}</p>`;
+                }
+                
+                popup.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close popup
+        closePopup.addEventListener('click', () => {
+            popup.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        popup.addEventListener('click', (e) => {
+            if (e.target === popup) {
+                popup.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -248,7 +388,10 @@
         // Form submission
         document.querySelector('.contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for your message! We\'ll get back to you soon.');
+            const message = currentLang === 'fr' 
+                ? 'Merci pour votre message! Nous vous répondrons bientôt.' 
+                : 'شكرا لرسالتك! سنرد عليك قريبا.';
+            alert(message);
             this.reset();
         });
 
