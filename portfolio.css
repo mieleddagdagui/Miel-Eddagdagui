@@ -26,6 +26,8 @@ body {
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -128,9 +130,9 @@ body {
 
 .toggle > div {
     position: relative;
-    padding: 6px;
-    width: 100px;
-    height: 50px;
+    padding: 0.2rem;
+    width: 3.2;
+    height:1.5rem;
     border-radius: 50px;
     box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, .5), 0px 1px 1px 0 rgba(255, 255, 255, 1);
     background: rgb(189, 191, 193);
@@ -149,8 +151,8 @@ body {
 }
 
 .toggle > div > input[type=checkbox] ~ div {
-    width: 88px;
-    height: 38px;
+    width: 3rem;
+    height: 1.2rem;
     border-radius: 50px;
     border: 1px solid #979797;
     box-shadow: inset 5px 0 0 0 rgba(0, 0, 0, .1), inset -5px 0 0 0 rgba(0, 0, 0, .1), inset -6px 0 0 0 rgba(255, 255, 255, .5), inset -4px 6px 11px -5px rgba(0, 0, 0, .2), inset 1px 1px 0 0 rgba(255, 255, 255, 1), -6px 4px 11px -7px rgba(0, 0, 0, .5);
@@ -170,10 +172,10 @@ body {
     display: block;
     position: absolute;
     border-radius: 10px;
-    top: 12px;
-    left: 16px;
+    top: 0.485rem;
+    left: 0.8rem;
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 0.45rem;
     color: #ff8f00;
     text-shadow: 0 1px 0 #fff, 0px 0 5px #007a08;
     filter: dropshadow(color=#007a08, offx=0, offy=0);
@@ -187,20 +189,22 @@ body {
     display: block;
     position: absolute;
     border-radius: 10px;
-    top: 12px;
-    left: 62px;
+    top: 0.485rem;
+    left: 2.1rem;
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 0.45rem;
 }
 
 .toggle > div > input[type=checkbox]:checked ~ div:before {
-    color: #000; /* Gray when FR is not selected */
+    color: #000;
     text-shadow: none;
+    filter: dropshadow(none);
 }
 
 .toggle > div > input[type=checkbox]:checked ~ div:after {
-    color: #ff8f00;  /* Your website's orange color when AR is selected */
-    text-shadow: 0 1px 0 #fff;
+    color:#ff8f00;
+    text-shadow: 0 1px 0 #fff, 0px 0 5px #df0000;
+    filter: dropshadow(color=#df0000, offx=0, offy=0);
 }
 
 /* Hero Section */
@@ -648,6 +652,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
+    overflow-y: auto;
 }
 
 .popup-overlay.active {
@@ -665,12 +670,13 @@ body {
     overflow-y: auto;
     position: relative;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    transform: translateY(-50px);
+    transform: scale(0.7);
     transition: transform 0.3s ease;
+    margin: 20px;
 }
 
 .popup-overlay.active .popup-content {
-    transform: translateY(0);
+    transform: scale(1);
 }
 
 .popup-close {
@@ -731,16 +737,23 @@ html[dir="rtl"] {
 
 /* Keep logo, toggle, and nav in same position for RTL */
 html[dir="rtl"] .logo {
-    left: 20px;  /* Stay on the left */
+    left: 20px !important;
+    right: auto !important;
 }
 
 html[dir="rtl"] .toggle {
-    right: 20px;  /* Stay on the right */
+    right: 20px !important;
+    left: auto !important;
 }
 
 html[dir="rtl"] .nav-menu {
-    left: 50%;
-    transform: translateX(-50%);  /* Stay centered */
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+}
+
+html[dir="rtl"] .nav-container {
+    direction: ltr;
 }
 
 html[dir="rtl"] .hero {
@@ -767,6 +780,11 @@ html[dir="rtl"] .popup-close {
 html[dir="rtl"] .popup-title {
     padding-right: 0;
     padding-left: 40px;
+}
+
+html[dir="rtl"] .popup-body {
+    direction: rtl;
+    text-align: right;
 }
 
 html[dir="rtl"] .popup-body ul {
@@ -950,31 +968,31 @@ html[dir="rtl"] .popup-body ul {
     }
     
     .toggle > div {
-        width: 90px;
-        height: 45px;
-        padding: 6px;
+        width: 4rem;
+        height: 2rem;
+        padding: 0.25rem;
     }
     
     .toggle > div > input[type=checkbox] {
-        width: 78px;
-        height: 33px;
-        left: 10px;
+        width: 3.5rem;
+        height: 1.5rem;
+        left: 0.45rem;
     }
     
     .toggle > div > input[type=checkbox] ~ div {
-        width: 78px;
-        height: 33px;
+        width: 3.5rem;
+        height: 1.5rem;
     }
     
     .toggle > div > input[type=checkbox] ~ div:before {
-        top: 10px;
-        left: 14px;
-        font-size: 0.7rem;
+        top: 0.3rem;
+        left: 0.5rem;
+        font-size: 0.6rem;
     }
     
     .toggle > div > input[type=checkbox] ~ div:after {
-        top: 10px;
-        left: 55px;
-        font-size: 0.7rem;
+        top: 0.3rem;
+        left: 2.5rem;
+        font-size: 0.6rem;
     }
 }
