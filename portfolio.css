@@ -996,3 +996,23 @@ html[dir="rtl"] .popup-body ul {
         font-size: 0.6rem;
     }
 }
+
+
+.price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ff8f00;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.price:last-child {
+    margin-bottom: 0;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
